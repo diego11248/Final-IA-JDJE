@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 
 class TransformerModel(nn.Module):
-    def __init__(self, input_dim, timesteps, d_model=64, num_heads=4, num_layers=2, dim_feedforward=64, dropout=0.1):
+    def __init__(self, input_dim, timesteps, d_model=128, num_heads=4, num_layers=3, dim_feedforward=128, dropout=0.2):
         super(TransformerModel, self).__init__()
         
         # Proyección lineal para ajustar las variables OHLCV a las dimensiones internas del Transformer
